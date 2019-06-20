@@ -1,0 +1,10 @@
+#year, #month{
+    background: transparent;
+    width: 15%;
+    font-size: 13px;
+  padding: 10px 8px 10px 14px;
+}
+
+#year option, #month option{
+    font-size: 13px;
+} 

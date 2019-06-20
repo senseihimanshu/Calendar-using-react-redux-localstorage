@@ -1,0 +1,24 @@
+.reminders li{
+    color: dimgray;
+    font-size: 1em;
+    list-style: decimal;
+}
+
+.reminders li span{
+    font-size: 0.8em;
+    position: relative;
+    right: 8px;
+    font-weight: 300;
+}
+
+.move{
+    font-size: 0.8em;
+}
+
+.fa-trash{
+    color: red;
+}
+
+.fa-pencil{
+    color: green;
+}

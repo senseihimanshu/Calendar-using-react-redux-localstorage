@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+thead, tbody{
+    display: flex;
+    flex-direction: row;
+}
+
+tr{
+    display: flex;
+    flex-direction: column;
+}
+
+#nameDays{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+}
+
+#nameDays td{
+    padding: 10px 40px;
+    border: 1px solid red;
+}
+
+tr td{
+    color: purple;
+    margin: 0 6px;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 0 40px;
+    border-bottom: 1px solid magenta;
+    border-right: 1px solid magenta;
+}
+
+tr td h4{
+    visibility: hidden;
+}
+
+tr td p{
+    font-size: 48px;
+    color: green;
+}
+
+button{
+    margin-left: 1px;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width:1px;
+}

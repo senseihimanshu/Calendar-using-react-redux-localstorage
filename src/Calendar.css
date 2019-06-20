@@ -1,0 +1,34 @@
+.link-submit{
+    padding: 8px 12px;
+    border: 2px solid magenta;
+    border-radius: 2px;
+    background-color: cornsilk;
+}
+
+.link-submit a{
+    color: purple;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+button{
+    cursor: pointer;
+}
+
+.decr{
+    padding: 25px 7px;
+    margin-left: 400px;
+    background-color: cornsilk;
+    color: purple;
+    border: 2px solid magenta;
+    float: left; 
+}
+
+.incr{
+    padding: 25px 7px;
+    margin-right: 400px;
+    background-color: cornsilk;
+    color: purple;    
+    border: 2px solid magenta;
+    float: right;
+}
