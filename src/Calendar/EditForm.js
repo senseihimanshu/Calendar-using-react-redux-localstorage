@@ -50,7 +50,7 @@ class EditForm extends Component{
                     <i className="fa fa-check" aria-hidden="true"></i>
                 </button>
                 
-                <button><Link to={`/calendar`}><i className="fa fa-times" aria-hidden="true"></i></Link></button>
+                <button><Link to={`/calendar`}><i className="fa fa-home" aria-hidden="true"></i></Link></button>
             </form>
         );
     }

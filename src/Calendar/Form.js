@@ -24,6 +24,7 @@ class Form extends Component{
         return(
             <form>
                 <h1>{this.props.date} {moment(this.props.month).format('MMMM')} {this.props.year}</h1>
+                <h3>Add Note</h3>
                 <div id="message"></div>
                 <div>
                     <label htmlFor="note">Note:</label>

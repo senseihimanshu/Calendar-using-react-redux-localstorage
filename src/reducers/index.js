@@ -35,15 +35,17 @@ const addNoteReducer = (state = initialState, action) => {
             }
         }
     }
+    initialState = state;
     return state;
 }
 
 const editNoteReducer = (state=initialState, action) => {
     if(action.type === 'EDIT_NOTE'){
         let {key, note, time, oldTime} = action.payload;
-        console.log('REDUCER!!!', key, note, time);
+        console.log('REDUCER!!!', key, state.reminders[key], note, time, state);
 
         let newArr = state.reminders[key].filter((obj)=>{
+            console.log(obj);
             return obj.time !== oldTime;
         });
 
@@ -51,9 +53,10 @@ const editNoteReducer = (state=initialState, action) => {
 
         state.reminders = {
             ...state.reminders,
-            [key]: [newArr, {note, time}]
+            [key]: [...newArr, {note, time}]
         };
     }
+    state = initialState;
     return state;
 }
 

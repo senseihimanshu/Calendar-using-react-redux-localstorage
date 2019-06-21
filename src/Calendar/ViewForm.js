@@ -10,7 +10,7 @@ class ViewForm extends Component{
             <div className="ViewForm">
                 <h1>VIEW PAGE</h1>
                 {(`${this.props.date}${this.props.month}${this.props.year}` in this.props.reminders) ?
-                    <ul> 
+                    <ul>
                     {this.props.reminders[`${this.props.date}${this.props.month}${this.props.year}`].map((cur, index)=>{
                         return <li key={`${cur.note}+${index}`}>({cur.time})<span>{cur.note}</span>
                         <button id="edit"><Link to={`/event/edit/${this.props.date}${this.props.month}${this.props.year}/${cur.time}`}>Edit</Link></button>
